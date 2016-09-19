@@ -1,0 +1,139 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ru">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="ru">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="ru">
+<![endif]-->
+<!--[if gt IE 8]>
+<!-->
+<html class="no-js" lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="windows-1251">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Переключатели | pcvector.net</title>
+	<meta name="description" content="jQuery плагин для простых кнопок переключателей">
+	<meta name="author" content="Simon Tabor">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="toggles.css">
+	<link rel="stylesheet" type="text/css" href="toggles-dark.css">
+	<link rel="stylesheet" type="text/css" href="toggles-light.css">
+	<link rel="stylesheet" type="text/css" href="toggles-iphone.css">
+</head>
+
+<body>
+
+<div class="topHeader">
+	<a class="backArticle" href="http://pcvector.net/scripts/forms/401-krasivoe-oformlenie-knopok-pereklyuchateley.html">Назад к статье &gt;&gt;&gt;</a>
+</div>
+
+   <div role="main">
+	<h2>jQuery Toggles</h2>
+	<p class="main">Toggles это легкий jQuery плагин позволяющий создать простые и красиво оформленные кнопки переключения.</p>
+	<div class="downloader">
+		<div class="downloads">
+			<a href="https://raw.github.com/simontabor/jquery-toggles/master/toggles.min.js" target="_blank">
+				<div class="download">Скачать<br>
+					<span>Сжатая версия - 2.1kb</span>
+				</div>
+			</a>
+			<br>
+			<a class="unminified" target="_blank" href="https://raw.github.com/simontabor/jquery-toggles/master/toggles.js">Не сжатая версия</a>
+		</div>
+	</div>
+	<h3>Темы</h3>
+	<div class="themes">
+		<div class="light">
+			<div>
+				<h4>Светлая</h4>
+				<div class="toggle"></div>
+			</div>
+			<a class="theme-download" target="_blank" href="toggles-light.css">Скачать тему</a>
+		</div>
+
+		<div class="dark">
+			<div>
+				<h4>Темная</h4>
+				<div class="toggle"></div>
+				<p class="designed">Designed by <a target="_blank" href="https://twitter.com/jamesjgill">James Gill</a></p>
+			</div>
+			<a class="theme-download" target="_blank" href="toggles-dark.css">Скачать тему</a>
+		</div>
+		<div class="iphone">
+			<div>
+				<h4>iPhone</h4>
+				<div class="toggle"></div>
+			</div>
+			<a class="theme-download" target="_blank" href="toggles-iphone.css">Скачать тему</a>
+		</div>
+
+	</div>
+	<h3>Примеры</h3>
+	<div class="light examples">
+		<div class="themeselect">
+			<label for="theme">Выберите тему: </label>
+			<select id="theme">
+				<option rel="light">Светлая</option>
+				<option rel="dark">Темная</option>
+				<option rel="iphone">iPhone</option>
+			</select>
+		</div>
+		<h4>Без клика</h4>
+		<div class="toggle noclick"></div>
+		<code>$('.toggle').toggles({clickable:false});</code>
+		<h4>Без перетаскивания</h4>
+		<div class="toggle nodrag"></div>
+		<code>$('.toggle').toggles({dragable:false});</code>
+		<h4>Кликабельный элемент</h4>
+		<div class="clickme"><span style="font-size:13px">Нажмите тут!</span> <div rel="clickme" class="toggle"></div></div>
+		<code>$('.toggle').toggles({click:$('.clickme')});</code>
+		<h4>Переключение чекбокс</h4>
+		<div class="toggle" data-checkbox="checkme"></div>
+		<input type="checkbox" disabled class="checkme">
+		<br>
+		<code>$('.toggle').toggles({checkbox:$('.checkme')});</code>
+		<h4>Выключен по умолчанию</h4>
+		<div class="toggle off"></div>
+		<code>$('.toggle').toggles({on:false});</code>
+		<h4>Пользовательский текст</h4>
+		<div class="toggle" data-ontext="Привет" data-offtext="Пока"></div>
+		<code>$('.toggle').toggles({ontext:'Привет',offtext:'Пока'});</code>
+
+	</div>
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/toggles.js"></script>
+<script>
+	$('.toggle').each(function() {
+		$(this).toggles({
+			clickable: !$(this).hasClass('noclick'),
+			dragable: !$(this).hasClass('nodrag'),
+			click: ($(this).attr('rel')) ? $('.'+$(this).attr('rel')) : undefined,
+			on: !$(this).hasClass('off'),
+			checkbox: ($(this).data('checkbox')) ? $('.'+$(this).data('checkbox')) : undefined,
+			ontext: $(this).data('ontext') || 'ВКЛ',
+			offtext: $(this).data('offtext') || 'ВЫКЛ'
+		});
+	});
+
+	$('.toggle').on('toggle', function(e, active) {
+	  if (active) {
+	    console.log('Toggle is now ON!');
+	  } else {
+	    console.log('Toggle is now OFF!');
+	  }
+	});
+</script>
+
+<!-- pcvector.net -->
+<script type="text/javascript" src="http://pcvector.net/templates/pcv/js/pcvector.js"></script>
+<!-- /pcvector.net -->
+</body>
+</html>

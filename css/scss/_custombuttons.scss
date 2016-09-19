@@ -1,0 +1,28 @@
+//
+// Buttons
+// --------------------------------------------------
+
+
+// Base styles
+// --------------------------------------------------
+
+.btn {
+
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      outline: none;
+    }
+  }
+
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+    box-shadow: none;
+  }
+
+
+}
+

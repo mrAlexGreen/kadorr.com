@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kadorr</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+        <!--[if lt IE 9]>
+           <script>
+              document.createElement('header');
+              document.createElement('nav');
+              document.createElement('section');
+              document.createElement('article');
+              document.createElement('aside');
+              document.createElement('footer');
+           </script>
+        <![endif]-->
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+        <link href="css/style.css" rel="stylesheet">
+
+        <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+
+    <!-- bin/jquery.slider.min.js -->
+    <script type="text/javascript" src="js/jslider-master/jshashtable-2.1_src.js"></script>
+    <script type="text/javascript" src="js/jslider-master/jquery.numberformatter-1.2.3.js"></script>
+    <script type="text/javascript" src="js/jslider-master/tmpl.js"></script>
+    <script type="text/javascript" src="js/jslider-master/jquery.dependClass-0.1.js"></script>
+    <script type="text/javascript" src="js/jslider-master/draggable-0.1.js"></script>
+    <script type="text/javascript" src="js/jslider-master/jquery.slider.js"></script>
+    <!-- end -->
+    <!-- bin/jquery.slider.min.css -->
+    <link rel="stylesheet" href="css/jslider.css" type="text/css">
+    <link rel="stylesheet" href="css/jslider.year.css" type="text/css">
+    <!-- end -->
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+
+        <script type="text/javascript" src="js/jquery.imagemapster.js"></script>
+
+        <!-- <link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" /> -->
+        <!-- <link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" /> -->
+
+        <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+        <!--script type="text/javascript" src="js/supersized.3.2.7.js"></script>
+        <script type="text/javascript" src="theme/supersized.shutter.js"></script-->
+
+
+        <script src="js/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+        <script src="js/toggles.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.9.2.custom.css">
+        <link rel="stylesheet" type="text/css" href="css/toggles.css">
+        <link rel="stylesheet" href="css/toggles-dark.css" type="text/css" >
+
+        <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" href="css/slick.css">
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+
+
+    </head>
+    <body>
+
+
+        <div id="wrapper" class="toggled">
+        <!-- <div class="overlay"></div> -->
+
+        <!-- Sidebar -->
+        <div class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper">
+            <div class="dtable dummy_table">
+            <div class="dtrow"><div class="dtcell"><div class="dummy_header"></div></div></div>
+            <div class="dtrow"><div class="dtcell td_dummy_nav"><div class="dummy_nav"></div></div></div>
+            <div class="dtrow"><div class="dtcell"><div class="dummy_footer"></div></div></div>
+                <header class="header">
+                    <img class="img-responsive" src="images/logo1.png" alt="KadorrGroup">
+                </header>
+                <nav class="navigation">
+                    <a class="link" href="ru/concept/" title="">
+                        <!-- <i class="icon icon_concept"></i> -->
+                        <svg width="20px" height="20px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#concept"></use></svg>
+                        <span>о нас</span>
+                    </a>
+                    <a class="link" href="ru/map/" title="">
+                        <!-- <i class="icon icon_placement"></i> -->
+                        <svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#placement"></use></svg>
+                        <span>недвижимость</span>
+                    </a>
+                    <a class="link" href="ru/infrastructure/" title="">
+                        <!-- <i class="icon icon_second_placement"></i> -->
+                        <svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#second_placement"></use></svg>
+                        <span>вторичная <br>недвижимоcть</span>
+                    </a>
+                    <a class="link" href="ru/plannings/" title="">
+                        <!-- <i class="icon icon_repairs"></i> -->
+                        <svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#repairs"></use></svg>
+                        <span>ремонты</span>
+                    </a>
+                    <a class="link" href="ru/contacts/" title="">
+                        <!-- <i class="icon icon_our_business"></i> -->
+                        <svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#our_business"></use></svg>
+                        <span>наш бизнес</span>
+                    </a>
+                    <a class="link" href="ru/contacts/" title="">
+                        <!-- <i class="icon icon_contacts"></i> -->
+                        <svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#contacts"></use></svg>
+                        <span>контакты</span>
+                    </a>
+                    <form name="search" action="#" method="get" class="form-inline form-search pull-right hidden-xs">
+                    <div class="input-group">
+                        <!-- <i class="icon icon_search"></i> -->
+                        <svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use></svg>
+                        <input class="form-control" id="searchInput" type="text" name="search" placeholder="...">
+                    </div>
+                    </form>
+                </nav>
+
+                <footer class="footer">
+
+                <div class="phone">отдел продаж <br><br> (048) <span>702-27-27</span> <br>(048) <span>702-57-57</span></div>
+                <div class="social">
+                    <div class="social_links clearfix">
+                        <a class="link" href="#" title="">
+                            <i class="icon icon_soc_vk"></i>
+                        </a>
+                        <a class="link" target="_blank" onclick="_trackEvent('goto','facebook')" href="#" title="">
+                            <i class="icon icon_soc_fb"></i>
+                        </a>
+                        <a class="link" href="#" title="">
+                            <i class="icon icon_soc_youtube"></i>
+                        </a>
+                        <a class="link" target="#" onclick="_trackEvent('goto','twitter')" href="#" title="">
+                            <i class="icon icon_soc_inst"></i>
+                        </a>
+                    </div>
+                </div>
+                <i class="hr"></i>
+                <div class="lang">
+                    <span>Рус</span>
+                    <a href="/en/">Eng</a>
+                </div>
+                </footer>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-open" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+            <section class="section--realty">
+                <div class="filter-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <h1>недвижимость</h1>
+                            </div>
+                            <div class="col-xs-7">
+                                <div class="layout-slider" style="width: 100%">
+                                    <span>в период</span> <span style="display: inline-block; width: 400px; padding: 0 5px;"><input id="SliderYear" type="slider" name="price" value="2012;2018" /></span>
+                                     <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroyka"></use></svg>
+                                     <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sdan"></use></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="filter--middel">
+                    <div class="container">
+                        <div class="row">
+                            <ul id="portfolio_filters" class="portfolio-main filter full">
+                                <li class="all-projects active">
+                                    <a class="" href="javascript:;" data-filter="*">ВСЕ</a>
+                                    <!-- <span class="separator">/</span> -->
+                                </li>
+                                                <li class="cat-item business" data-type="business" style="clear:none">
+                                    <a data-filter=".business" href="javascript:;" title="Бизнес центры">Бизнес центры</a>
+                                    <!-- <span class="separator">/</span> -->
+                                </li>
+                                                <li class="cat-item living" data-type="living" style="clear:none">
+                                    <a data-filter=".living" href="javascript:;" title="Жилые комплексы">Жилые комплексы</a>
+                                    <!-- <span class="separator">/</span> -->
+                                </li>
+                                                <li class="cat-item kommercheskaya-nedvizhimost" data-type="kommercheskaya-nedvizhimost" style="clear:none">
+                                    <a data-filter=".kommercheskaya-nedvizhimost" href="javascript:;" title="Коммерческая недвижимость">Коммерческая недвижимость</a>
+                                    <!-- <span class="separator">/</span> -->
+                                </li>
+                                                <li class="cat-item cottage" data-type="cottage" style="clear:none">
+                                    <a data-filter=".cottage" href="javascript:;" title="Коттеджи">Коттеджи</a>
+                                    <!-- <span class="separator">/</span> -->
+                                </li>
+                                                <li class="cat-item trc" data-type="trc" style="clear:none">
+                                    <a data-filter=".trc" href="javascript:;" title="Торговые центры">Торговые центры</a>
+                                    <!-- <span class="separator">/</span> -->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="filter--content">
+                     <div class="container">
+                         <div class="row">
+                            <div class="col-xs-4">
+                                <div class="img">
+                                    <img src="images/1.jpg" class="img-responsive wp-post-image" alt="">
+                                    <div class="over-proper">
+                                        <a href="#"  class="btn about">Подробнее</a>
+                                        <a href="#"  class="btn show_map">
+                                            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#onmap"></use></svg>
+                                            <p>показать на карте</p>
+                                        </a>
+
+                                        <div class="btn status">
+                                            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroyka"></use></svg>
+                                            <p>Дом в поцессе <br> строительства</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-object">
+                                    <p class="name">Первая Жемчужина</p>
+                                    <p class="adress"><span>Адрес</span>: Гагаринское Плато 5-А, корпус 1.</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img">
+                                    <img src="images/1.jpg" class="img-responsive wp-post-image" alt="">
+                                    <div class="over-proper">
+                                        <a href="#"  class="btn about">Подробнее</a>
+                                        <a href="#"  class="btn show_map">
+                                            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#onmap"></use></svg>
+                                            <p>показать на карте</p>
+                                        </a>
+
+                                        <div class="btn status">
+                                            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroyka"></use></svg>
+                                            <p>Дом в поцессе <br> строительства</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-object">
+                                    <p class="name">Первая Жемчужина</p>
+                                    <p class="adress"><span>Адрес</span>: Гагаринское Плато 5-А, корпус 1.</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img">
+                                    <img src="images/1.jpg" class="img-responsive wp-post-image" alt="">
+                                    <div class="over-proper">
+                                        <a href="#"  class="btn about">Подробнее</a>
+                                        <a href="#"  class="btn show_map">
+                                            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#onmap"></use></svg>
+                                            <p>показать на карте</p>
+                                        </a>
+
+                                        <div class="btn status">
+                                            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroyka"></use></svg>
+                                            <p>Дом в поцессе <br> строительства</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-object">
+                                    <p class="name">Первая Жемчужина</p>
+                                    <p class="adress"><span>Адрес</span>: Гагаринское Плато 5-А, корпус 1.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <div class="img">
+                                    <img src="images/1.jpg" class="img-responsive wp-post-image" alt="">
+                                    <div class="over-proper">
+                                        <a href="#"  class="btn about">Подробнее</a>
+                                        <a href="#"  class="btn show_map">
+                                            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#onmap"></use></svg>
+                                            <p>показать на карте</p>
+                                        </a>
+
+                                        <div class="btn status">
+                                            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroyka"></use></svg>
+                                            <p>Дом в поцессе <br> строительства</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-object">
+                                    <p class="name">Первая Жемчужина</p>
+                                    <p class="adress"><span>Адрес</span>: Гагаринское Плато 5-А, корпус 1.</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img">
+                                    <img src="images/1.jpg" class="img-responsive wp-post-image" alt="">
+                                    <div class="over-proper">
+                                        <a href="#"  class="btn about">Подробнее</a>
+                                        <a href="#"  class="btn show_map">
+                                            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#onmap"></use></svg>
+                                            <p>показать на карте</p>
+                                        </a>
+
+                                        <div class="btn status">
+                                            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroyka"></use></svg>
+                                            <p>Дом в поцессе <br> строительства</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-object">
+                                    <p class="name">Первая Жемчужина</p>
+                                    <p class="adress"><span>Адрес</span>: Гагаринское Плато 5-А, корпус 1.</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img">
+                                    <img src="images/1.jpg" class="img-responsive wp-post-image" alt="">
+                                    <div class="over-proper">
+                                        <a href="#"  class="btn about">Подробнее</a>
+                                        <a href="#"  class="btn show_map">
+                                            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#onmap"></use></svg>
+                                            <p>показать на карте</p>
+                                        </a>
+
+                                        <div class="btn status">
+                                            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroyka"></use></svg>
+                                            <p>Дом в поцессе <br> строительства</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-object">
+                                    <p class="name">Первая Жемчужина</p>
+                                    <p class="adress"><span>Адрес</span>: Гагаринское Плато 5-А, корпус 1.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <div class="img">
+                                    <img src="images/1.jpg" class="img-responsive wp-post-image" alt="">
+                                    <div class="over-proper">
+                                        <a href="#"  class="btn about">Подробнее</a>
+                                        <a href="#"  class="btn show_map">
+                                            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#onmap"></use></svg>
+                                            <p>показать на карте</p>
+                                        </a>
+
+                                        <div class="btn status">
+                                            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroyka"></use></svg>
+                                            <p>Дом в поцессе <br> строительства</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-object">
+                                    <p class="name">Первая Жемчужина</p>
+                                    <p class="adress"><span>Адрес</span>: Гагаринское Плато 5-А, корпус 1.</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img">
+                                    <img src="images/1.jpg" class="img-responsive wp-post-image" alt="">
+                                    <div class="over-proper">
+                                        <a href="#"  class="btn about">Подробнее</a>
+                                        <a href="#"  class="btn show_map">
+                                            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#onmap"></use></svg>
+                                            <p>показать на карте</p>
+                                        </a>
+
+                                        <div class="btn status">
+                                            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroyka"></use></svg>
+                                            <p>Дом в поцессе <br> строительства</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-object">
+                                    <p class="name">Первая Жемчужина</p>
+                                    <p class="adress"><span>Адрес</span>: Гагаринское Плато 5-А, корпус 1.</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="img">
+                                    <img src="images/1.jpg" class="img-responsive wp-post-image" alt="">
+                                    <div class="over-proper">
+                                        <a href="#"  class="btn about">Подробнее</a>
+                                        <a href="#"  class="btn show_map">
+                                            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#onmap"></use></svg>
+                                            <p>показать на карте</p>
+                                        </a>
+
+                                        <div class="btn status">
+                                            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroyka"></use></svg>
+                                            <p>Дом в поцессе <br> строительства</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-object">
+                                    <p class="name">Первая Жемчужина</p>
+                                    <p class="adress"><span>Адрес</span>: Гагаринское Плато 5-А, корпус 1.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+
+            </section>
+            <section class="section_map" data-navigation="map">
+                <!-- <div id="map"></div> -->
+            </section>
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+    <script src="js/script.js"></script>
+    <script src="js/kadorr.js"></script>
+    <!-- FlexSlider -->
+    <!--script defer src="js/jquery.flexslider.js"></script-->
+
+    <!--script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9GANjLIDTl4_1eG3Lg3KiQePKHNDlgGE&callback=initMap" async defer></script-->
+
+    <script type="text/javascript">
+        // Note: This example requires that you consent to location sharing when
+        // prompted by your browser. If you see the error "The Geolocation service
+        // failed.", it means you probably did not give permission for the browser to
+        // locate you.
+
+
+        function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 46.436709, lng: 30.766171},
+            zoom: 17,
+            scrollwheel: false,
+            navigationControl: false,
+            mapTypeControl: false,
+            scaleControl: false,
+            draggable: false
+          });
+
+          google.maps.event.addListener(map, 'idle', function(){
+                $('style').remove();
+            });
+
+          var infoWindow = new google.maps.InfoWindow({map: map});
+
+          // Try HTML5 geolocation.
+/*        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+              var pos = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+
+              };*/
+
+                var contentString = '<div id="MapContent">'+
+                  '<p>Адрес: ул. Генуэзская<br>' +
+                  'Площадь квартир: от кв.м. до кв.м. <br>' +
+                  'Срок сдачи: III квартал 2018 года </p>' +
+                  '</div>';
+
+              infoWindow.setPosition({lat: 46.436709, lng: 30.766171});
+              infoWindow.setContent(contentString);
+              // map.setCenter(pos);
+              map.setCenter({lat: 46.436709, lng: 30.766171});
+
+                  var image = 'images/mapMarker.png';
+                  var marker = new google.maps.Marker({
+                    position: {lat: 46.436709, lng: 30.766171},
+                    // position: pos,
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                    icon: image
+                  });
+                  marker.addListener('click', function() {
+                        infoWindow.open(map, marker);
+                  });
+
+
+/*          }, function() {
+              handleLocationError(true, infoWindow, map.getCenter());
+            });
+          } else {
+            // Browser doesn't support Geolocation
+            handleLocationError(false, infoWindow, map.getCenter());
+          }*/
+        }
+
+        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+          infoWindow.setPosition(pos);
+          infoWindow.setContent(browserHasGeolocation ?
+                                'Error: The Geolocation service failed.' :
+                                'Error: Your browser doesn\'t support geolocation.');
+        }
+
+
+        $(document).ready(function () {
+
+            $( "#slider" ).slider();
+
+
+            // index page, right navigation checker
+            if( $('.nav_buttons').length ){
+                var nav_links =  $('[data-navlink]');
+                var nav_blocks = $('[data-navigation]');
+                nav_links.click(function(e){
+                    e.preventDefault();
+                    var _index = nav_links.index(this);
+                    var scroll_top = $(nav_blocks[_index]).offset().top+1;
+                    $('html,body').animate({scrollTop:scroll_top},1000);
+                });
+                var navs_length = nav_links.length;
+
+/*              var navWindowScroll = function(){
+                    var top = getScrollTop();
+
+                    for( var i= navs_length-1; i>=0; i-- ){
+                        var delta = ( i==navs_length-1 )? -240:0;
+                        if( $(nav_blocks[i]).offset().top +delta <= top ){
+                            nav_links.removeClass('act');
+                            $(nav_links[i]).addClass('act');
+                            break;
+                        }
+                    }
+                };
+                window.onscroll = navWindowScroll;
+                navWindowScroll();*/
+            }
+
+
+            var trigger = $('.hamburger'),
+                overlay = $('.overlay'),
+                isClosed = true;
+
+            trigger.click(function () {
+              hamburger_cross();
+            });
+
+            function hamburger_cross() {
+
+              if (isClosed == true) {
+                overlay.hide();
+                trigger.removeClass('is-open');
+                trigger.addClass('is-closed');
+                isClosed = false;
+              } else {
+                overlay.show();
+                trigger.removeClass('is-closed');
+                trigger.addClass('is-open');
+                isClosed = true;
+              }
+            }
+
+            window.onscroll = function() {
+                if ($('#wrapper').hasClass('toggled')) {
+                    hamburger_cross();
+                    $('#wrapper').toggleClass('toggled');
+                }
+            }
+
+
+            $('[data-toggle="offcanvas"]').click(function () {
+                $('#wrapper').toggleClass('toggled');
+            });
+
+            //onhover image
+                //установите непрозрачность до 0,4 для всех изображений
+            //непрозрачность = 1 - полностью непрозрачным
+            //непрозрачность = 0 - невидимая
+            // $('.img img').css('opacity', 1);
+            // когда наведете курсор на выбранном изображении изменить непрозрачность до 1
+            // $('#house').hover(
+            // function(){
+            //  $('day').stop().fadeTo('slow', 0);
+            // },
+            // function(){
+            //  $('night').stop().fadeTo('slow', 1);
+            // });
+
+
+            $('.toggle').each(function() {
+                $(this).toggles({
+                    clickable: !$(this).hasClass('noclick'),
+                    dragable: !$(this).hasClass('nodrag'),
+                    click: ($(this).attr('rel')) ? $('.'+$(this).attr('rel')) : undefined,
+                    on: !$(this).hasClass('off'),
+                    checkbox: ($(this).data('checkbox')) ? $('.'+$(this).data('checkbox')) : undefined,
+                    ontext: $(this).data('ontext') || '',
+                    offtext: $(this).data('offtext') || ''
+                });
+            });
+
+            $('.house img').css({opacity: 0.0});
+            $('.house img:first').css({opacity: 1.0});
+
+            function showDayNight(){
+
+                // Берем первую картинку
+                var current = ($('.house img.show')?  $('.house img.show') : $('.house img:first'));
+
+                // Берем следующую картинку, когда дойдем до последней начинаем с начала
+                var next = ((current.next().length) ? ((current.next().hasClass('show')) ? $('.house img:first') :current.next()) : $('.house img:first'));
+
+                current.stop(1,1);
+                // Подключаем эффект растворения/затухания для показа картинок, css-класс show имеет больший z-index
+                next.css({opacity: 0.0})
+                .addClass('show')
+                .animate({opacity: 1.0}, 1400);
+
+                // Прячем текущую картинку
+                current.animate({opacity: 0.0}, 1400)
+                .removeClass('show');
+            }
+
+            $('.toggle').on('toggle', function(e, active) {
+
+              if (active) {
+                $("#checkDay").toggleClass("day night");
+                showDayNight();
+
+              } else {
+                $("#checkDay").toggleClass("night day");
+                showDayNight();
+
+              }
+            });
+
+            var scrollDownHolder = $('.js-scroll-down-holder');
+            if (scrollDownHolder.length){// && !isTouch) {
+                scrollDownHolder.click(function(){
+                    $('html,body').stop(1,1).animate({scrollTop: $(window).height()}, 400);
+                });
+                var isHidden = false;
+                var watchScrollTopFn = function(){
+                    if (isHidden && $(window).scrollTop() < 1) {scrollDownHolder.fadeIn(); isHidden = false;}
+                    if (!isHidden && $(window).scrollTop() > 1){scrollDownHolder.fadeOut(); isHidden = true;}
+                };
+                setInterval(watchScrollTopFn , 100);
+                watchScrollTopFn();
+            }
+
+
+            $(".regular").slick({
+                dots: false,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3
+            });
+
+            $(".toggled .hamburger.is-open").hover(
+              function () {
+                // $(this).find("span").css("background-color","white");
+                $(this).find("span").toggleClass("is-on")
+              },
+              function () {
+                // $(this).find("span").css("background-color","#2a483f");
+                $(this).find("span").toggleClass("is-on")
+              }
+            );
+
+        });
+    </script>
+    </body>
+</html>
+
+
+
+

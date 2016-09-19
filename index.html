@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Kadorr</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	    <![endif]-->
+	    <!--[if lt IE 9]>
+		   <script>
+		      document.createElement('header');
+		      document.createElement('nav');
+		      document.createElement('section');
+		      document.createElement('article');
+		      document.createElement('aside');
+		      document.createElement('footer');
+		   </script>
+		<![endif]-->
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+		<link href="css/style.css" rel="stylesheet">
+
+		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+
+		<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/supersized.shutter.css" type="text/css" media="screen" />
+
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+		<script type="text/javascript" src="js/supersized.3.2.7.js"></script>
+		<script type="text/javascript" src="js/supersized.shutter.js"></script>
+
+
+		<script src="js/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+		<script src="js/toggles.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/toggles.css">
+		<link rel="stylesheet" href="css/toggles-dark.css" type="text/css" >
+
+		<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+  		<link rel="stylesheet" type="text/css" href="css/slick.css">
+  		<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+		</script>
+
+	</head>
+	<body>
+        <div id="wrapper" class="toggled">
+        	<!-- <div class="overlay"></div> -->
+
+	        <!-- Sidebar -->
+	        <div class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper">
+		        <div class="dtable dummy_table">
+		        <div class="dtrow"><div class="dtcell"><div class="dummy_header"></div></div></div>
+		        <div class="dtrow"><div class="dtcell td_dummy_nav"><div class="dummy_nav"></div></div></div>
+		        <div class="dtrow"><div class="dtcell"><div class="dummy_footer"></div></div></div>
+			        <header class="header">
+			            <a href="\"> <img class="img-responsive" src="images/logo1.png" alt="KadorrGroup"></a>
+			        </header>
+			        <nav class="navigation">
+	            		<a class="link" href="ru/concept/" title="">
+	            			<!-- <i class="icon icon_concept"></i> -->
+	            			<svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#concept"></use></svg>
+	            			<span>о нас</span>
+	            		</a>
+						<a class="link" href="catalog.html" title="">
+							<!-- <i class="icon icon_placement"></i> -->
+							<svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#placement"></use></svg>
+							<span>недвижимость</span>
+						</a>
+						<a class="link" href="ru/infrastructure/" title="">
+							<!-- <i class="icon icon_second_placement"></i> -->
+							<svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#second_placement"></use></svg>
+							<span>вторичная <br>недвижимоcть</span>
+						</a>
+						<a class="link" href="ru/plannings/" title="">
+							<!-- <i class="icon icon_repairs"></i> -->
+							<svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#repairs"></use></svg>
+							<span>ремонты</span>
+						</a>
+						<a class="link" href="ru/contacts/" title="">
+							<!-- <i class="icon icon_our_business"></i> -->
+							<svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#our_business"></use></svg>
+							<span>наш бизнес</span>
+						</a>
+						<a class="link" href="ru/contacts/" title="">
+							<!-- <i class="icon icon_contacts"></i> -->
+							<svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#contacts"></use></svg>
+							<span>контакты</span>
+						</a>
+						<form name="search" action="#" method="get" class="form-inline form-search pull-right hidden-xs">
+						<div class="input-group">
+							<!-- <i class="icon icon_search"></i> -->
+							<svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use></svg>
+							<input class="form-control" id="searchInput" type="text" name="search" placeholder="...">
+						</div>
+						</form>
+					</nav>
+
+			        <footer class="footer">
+
+		            <div class="phone">отдел продаж <br><br> (048) <span>702-27-27</span> <br>(048) <span>702-57-57</span></div>
+		            <div class="social">
+		                <div class="social_links clearfix">
+		                    <a class="link" href="#" title="">
+		                    	<i class="icon icon_soc_vk"></i>
+		                    </a>
+		                    <a class="link" target="_blank" onclick="_trackEvent('goto','facebook')" href="#" title="">
+		                    	<i class="icon icon_soc_fb"></i>
+		                    </a>
+		                    <a class="link" href="#" title="">
+		                    	<i class="icon icon_soc_youtube"></i>
+		                    </a>
+		                    <a class="link" target="#" onclick="_trackEvent('goto','twitter')" href="#" title="">
+		                    	<i class="icon icon_soc_inst"></i>
+		                    </a>
+		                </div>
+		            </div>
+		            <i class="hr"></i>
+		            <div class="lang">
+		                <span>Рус</span>
+		                <a href="/en/">Eng</a>
+		            </div>
+		        	</footer>
+		        </div>
+	        </div>
+	        <!-- /#sidebar-wrapper -->
+
+	        <!-- Page Content -->
+	        <div id="page-content-wrapper">
+
+			    <button type="button" class="hamburger is-open" data-toggle="offcanvas">
+                	<span class="hamb-top"></span>
+                	<span class="hamb-middle"></span>
+                	<span class="hamb-bottom"></span>
+            	</button>
+
+
+	            <div class="mobile_header clearfix">
+                	 <a class="logo" href="\"> <img class="img-responsive" src="images/logo1.png" alt="KadorrGroup"></a>
+                	<!-- <form name="search" action="#" method="get" class="form-inline form-search pull-right"> -->
+					<!-- <div class="input-group"> -->
+						<!-- <i class="icon icon_search"></i> -->
+						<!-- <svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use></svg> -->
+						<!-- <input class="form-control" id="searchInput" type="text" name="search" placeholder="..."> -->
+					<!-- </div> -->
+					<!-- </form> -->
+				    <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                	<span class="hamb-top"></span>
+                	<span class="hamb-middle"></span>
+                	<span class="hamb-bottom"></span>
+	            	</button>
+
+
+
+    			</div>
+
+		        <section class="section--first" data-navigation="intro">
+				        <div class="content">
+							<!--Arrow Navigation-->
+								<a id="prevslide" class="load-item"></a>
+								<a id="nextslide" class="load-item"></a>
+
+								<ul id="supersized"></ul>
+				            <!-- col -->
+				            <span class="scroll_down_holder js-scroll-down-holder" style="display: block;">
+		        				прокрутить вниз<br>
+		        				<i class="icon scroll_down"></i>
+		    				</span>
+				        </div>
+				</section>
+
+				<section class="section--second" data-navigation="kakMbICtriom">
+			        <div id = "checkDay" class="content day">
+			        	<h2>Как мы строим</h2>
+			        	<div class="building">
+				        	<div class="button dark">
+				        		<div class="toggle"></div>
+				        	</div>
+
+							<div class="quality our-side">
+								<i class="icon_ icon_glass"></i>
+								<span>Рефлекторное остекление<br> с энергосберегающим эффектом</span>
+							</div>
+
+							<div class="quality our-lighting">
+								<i class="icon_ icon_lighting"></i>
+								<span>Фасадное освещение</span>
+							</div>
+
+							<div class="quality our-territory">
+								<i class="icon_ icon_territory"></i>
+								<span>Зеленая преддомовая <br> территория</span>
+							</div>
+
+							<div class="quality our-playgrounds">
+								<i class="icon_ icon_playgrounds"></i>
+								<span>Современные <br>детские площадки</span>
+							</div>
+
+							<div class="quality our-ventilated">
+								<i class="icon_ icon_ventilated"></i>
+								<span>Вентилируемый фасад</span>
+							</div>
+
+							<div class="quality our-security">
+								<i class="icon_ icon_security"></i>
+								<span>Система безопастности</span>
+							</div>
+
+							<div class="quality our-exploitation">
+								<i class="icon_ icon_exploitation"></i>
+								<span>Собственная служба <br> эксплуатации</span>
+							</div>
+
+							<div class="quality our-infrastructure">
+								<i class="icon_ icon_infrastructure"></i>
+								<span>Удобная инфраструктура</span>
+							</div>
+
+					        <div class="house">
+			        	  		<img class="img-responsive show" src="images/bg/house_day.png">
+				            	<img class="img-responsive" src="images/bg/house_night.png">
+					    	</div>
+						</div>
+			        </div>
+				</section>
+
+				<section class="section--third" data-navigation="otzyivyiklientov">
+					<div class="content">
+			        	<h3>Отзывы наших клиентов</h3>
+						<div class="regular slider">
+							<div>
+							  <!-- <img src="http://placehold.it/350x300?text=1"> -->
+							  <i class="icon icon_video"></i>
+							  <img src="images/bg/1.jpg" alt="">
+							</div>
+							<div>
+							  <!-- <img src="http://placehold.it/350x300?text=2"> -->
+							  <i class="icon icon_video"></i>
+							  <img src="images/bg/2.jpg" alt="">
+							</div>
+							<div>
+							  <!-- <img src="http://placehold.it/350x300?text=3"> -->
+							  <i class="icon icon_video"></i>
+							  <img src="images/bg/3.jpg" alt="">
+							</div>
+							<div>
+							  <!-- <img src="http://placehold.it/350x300?text=3"> -->
+							  <i class="icon icon_video"></i>
+							  <img src="images/bg/3.jpg" alt="">
+							</div>
+						</div>
+						<div class="about">
+							<div class="row">
+							  <div class="col-xs-1">
+							  </div>
+							  <div class="col-xs-4">
+							  	<img src="images/bg/kivan.jpg" alt="...">
+							  </div>
+							  <div class="col-xs-6">
+								<p>Лидер и основатель компании «KADORR Group» господин Аднан Киван, дает каждому клиенту свои персональные гарантии на качество и сроки строительства.</p>
+						        <h4>«KADORR Group» — бизнес с человеческим лицом, бизнес с Божьим благословением!</h4>
+							  </div>
+		  					  <div class="col-xs-1">
+							  </div>
+
+							</div>
+						</div>
+					</div>
+					<div class="inside-bg"></div>
+				</section>
+
+				<section class="section--fourth" data-navigation="perezvon">
+					<div class="content">
+			        	<h4>остались вопросы?</h4>
+			        	<p>Оставьте свои контактные данные и мы  проконсультруем Вас по всем интересующим вопросам</p>
+						<div class="call-back">
+							<!--
+		 					  <div class="col-xs-4">
+									<form name="search" action="#" method="get" class="form-inline form-search pull-right hidden-xs">
+									<div class="input-group">
+										<i class="icon icon_search"></i>
+										<input class="form-control" id="searchInput" type="text" name="search" placeholder="...">
+									</div>
+									</form>
+							  	</div>
+							-->
+
+							<div class="row">
+								<div class="col-xs-2"></div>
+								<div class="col-xs-3">
+							    	<div class="input-group">
+										<input class="form-control" id="emailInput" type="text" name="email" placeholder="Ваш email">
+							   		</div>
+								</div>
+								<div class="col-xs-3">
+							    	<div class="input-group">
+										<input class="form-control" id="phoneInput" type="text" name="phone" placeholder="Ваш телефон">
+							    	</div>
+							  	</div>
+							  	<div class="col-xs-2">
+							    	<div class="input-group">
+							    		<!-- <i class="icon icon_call"></i> -->
+
+							        	<button class="btn btn-call" type="button"><svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#call"></use></svg>Перезвонить!</button>
+							    	</div>
+							  	</div>
+							  	<div class="col-xs-2"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+		    </div>
+	        <!-- /#page-content-wrapper -->
+    	</div>
+    	<!-- /#wrapper -->
+    <script src="js/script.js"></script>
+    <script src="js/kadorr.js"></script>
+	</body>
+</html>
+
+
+
+

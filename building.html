@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Kadorr</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	    <![endif]-->
+	    <!--[if lt IE 9]>
+		   <script>
+		      document.createElement('header');
+		      document.createElement('nav');
+		      document.createElement('section');
+		      document.createElement('article');
+		      document.createElement('aside');
+		      document.createElement('footer');
+		   </script>
+		<![endif]-->
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+		<link href="css/style.css" rel="stylesheet">
+
+		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+
+		<script type="text/javascript" src="js/jquery.imagemapster.js"></script>
+
+		<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />
+
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+		<script type="text/javascript" src="js/supersized.3.2.7.js"></script>
+		<script type="text/javascript" src="theme/supersized.shutter.js"></script>
+
+
+		<script src="js/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+		<script src="js/toggles.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/toggles.css">
+		<link rel="stylesheet" href="css/toggles-dark.css" type="text/css" >
+
+		<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+  		<link rel="stylesheet" type="text/css" href="css/slick.css">
+  		<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
+  		<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+
+
+	</head>
+	<body>
+
+
+        <div id="wrapper" class="toggled">
+        <!-- <div class="overlay"></div> -->
+
+        <!-- Sidebar -->
+        <div class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper">
+	        <div class="dtable dummy_table">
+	        <div class="dtrow"><div class="dtcell"><div class="dummy_header"></div></div></div>
+	        <div class="dtrow"><div class="dtcell td_dummy_nav"><div class="dummy_nav"></div></div></div>
+	        <div class="dtrow"><div class="dtcell"><div class="dummy_footer"></div></div></div>
+		        <header class="header">
+		            <img class="img-responsive" src="images/logo1.png" alt="KadorrGroup">
+		        </header>
+		        <nav class="navigation">
+            		<a class="link" href="ru/concept/" title="">
+            			<!-- <i class="icon icon_concept"></i> -->
+            			<svg width="20px" height="20px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#concept"></use></svg>
+            			<span>о нас</span>
+            		</a>
+					<a class="link" href="ru/map/" title="">
+						<!-- <i class="icon icon_placement"></i> -->
+						<svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#placement"></use></svg>
+						<span>недвижимость</span>
+					</a>
+					<a class="link" href="ru/infrastructure/" title="">
+						<!-- <i class="icon icon_second_placement"></i> -->
+						<svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#second_placement"></use></svg>
+						<span>вторичная <br>недвижимоcть</span>
+					</a>
+					<a class="link" href="ru/plannings/" title="">
+						<!-- <i class="icon icon_repairs"></i> -->
+						<svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#repairs"></use></svg>
+						<span>ремонты</span>
+					</a>
+					<a class="link" href="ru/contacts/" title="">
+						<!-- <i class="icon icon_our_business"></i> -->
+						<svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#our_business"></use></svg>
+						<span>наш бизнес</span>
+					</a>
+					<a class="link" href="ru/contacts/" title="">
+						<!-- <i class="icon icon_contacts"></i> -->
+						<svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#contacts"></use></svg>
+						<span>контакты</span>
+					</a>
+					<form name="search" action="#" method="get" class="form-inline form-search pull-right hidden-xs">
+					<div class="input-group">
+						<!-- <i class="icon icon_search"></i> -->
+						<svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use></svg>
+						<input class="form-control" id="searchInput" type="text" name="search" placeholder="...">
+					</div>
+					</form>
+				</nav>
+
+		        <footer class="footer">
+
+	            <div class="phone">отдел продаж <br><br> (048) <span>702-27-27</span> <br>(048) <span>702-57-57</span></div>
+	            <div class="social">
+	                <div class="social_links clearfix">
+	                    <a class="link" href="#" title="">
+	                    	<i class="icon icon_soc_vk"></i>
+	                    </a>
+	                    <a class="link" target="_blank" onclick="_trackEvent('goto','facebook')" href="#" title="">
+	                    	<i class="icon icon_soc_fb"></i>
+	                    </a>
+	                    <a class="link" href="#" title="">
+	                    	<i class="icon icon_soc_youtube"></i>
+	                    </a>
+	                    <a class="link" target="#" onclick="_trackEvent('goto','twitter')" href="#" title="">
+	                    	<i class="icon icon_soc_inst"></i>
+	                    </a>
+	                </div>
+	            </div>
+	            <i class="hr"></i>
+	            <div class="lang">
+	                <span>Рус</span>
+	                <a href="/en/">Eng</a>
+	            </div>
+	        	</footer>
+	        </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-open" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+
+	        <section class="section--intro" data-navigation="gallery">
+			        <!-- <div class="blur"></div> -->
+			        <!-- <div class="wraper-intro"> -->
+
+			        <div class="container">
+			          <h1>Двенадцатая Жемчужина</h1>
+				      <div class="slider">
+				        <div id="slider" class="flexslider">
+				          <ul class="slides">
+				            <li>
+				  	    	    <img src="images/Gem12/1.jpg" />
+				  	    	</li>
+				            <li>
+				  	    	    <img src="images/Gem12/2.jpg" />
+				  	    	</li>
+				            <li>
+				  	    	    <img src="images/Gem12/2.jpg" />
+				  	    	</li>
+				            <li>
+				  	    	    <img src="images/Gem12/3.jpg" />
+				  	    	</li>
+				            <li>
+				  	    	    <img src="images/Gem12/4.jpg" />
+				  	    	</li>
+				            <li>
+				  	    	    <img src="images/Gem12/5.jpg" />
+				  	    	</li>
+				            <li>
+				  	    	    <img src="images/Gem12/6.jpg" />
+				  	    	</li>
+				            <li>
+				  	    	    <img src="images/Gem12/7.jpg" />
+				  	    	</li>
+				            <li>
+				  	    	    <img src="images/Gem12/8.jpg" />
+				  	    	</li>
+				            <li>
+				  	    	    <img src="images/Gem12/9.jpg" />
+				  	    	</li>
+				            <li>
+				  	    	    <img src="images/Gem12/10.jpg" />
+				  	    	</li>
+				          </ul>
+				        </div>
+				        <div id="carousel" class="flexslider">
+				          <ul class="slides">
+				            <li>
+				  	    	    <img src="images/Gem12/1.jpg" />
+				  	    	</li>
+				            <li>
+				  	    	    <img src="images/Gem12/2.jpg" />
+				  	    	</li>
+				            <li>
+				  	    	    <img src="images/Gem12/2.jpg" />
+				  	    	</li>
+				            <li>
+				  	    	    <img src="images/Gem12/3.jpg" />
+				  	    	</li>
+				            <li>
+				  	    	    <img src="images/Gem12/4.jpg" />
+				  	    	</li>
+				            <li>
+				  	    	    <img src="images/Gem12/5.jpg" />
+				  	    	</li>
+				            <li>
+				  	    	    <img src="images/Gem12/6.jpg" />
+				  	    	</li>
+				            <li>
+				  	    	    <img src="images/Gem12/7.jpg" />
+				  	    	</li>
+				            <li>
+				  	    	    <img src="images/Gem12/8.jpg" />
+				  	    	</li>
+				            <li>
+				  	    	    <img src="images/Gem12/9.jpg" />
+				  	    	</li>
+				            <li>
+				  	    	    <img src="images/Gem12/10.jpg" />
+				  	    	</li>
+				          </ul>
+				        </div>
+				      </div>
+					</div>
+					<div class="container-fluid info">
+						<div class="row">
+							<div class="col-xs-6 col-xs-offset-3">
+
+						      	<p>Адрес: <span>ул. Генуэзская</span></p>
+						      	<p>Площадь квартир:<span> от кв.м. до кв.м.</span>
+						      	<p>Срок сдачи:<span> III квартал 2018 года</span></p>
+						      	<p class="text"><strong>Двадцать Шестая Жемчужина</strong> на Генуэзской — новый проект компании «KADORR Group». Ведущими архитекторами компании предложен элегантный архитектурный стиль, в котором сдержанность сочетается с великолепием. Ключевой момент и признак европейского менталитета – особый подход к межквартальным проездам и подъездам, придомовым территориям, парадным входам, холлам. К вашим услугам – просторный паркинг.<br>Это курортный район Одессы, расположенный в непосредственной близости к морю, с прекрасным сообщением со всеми районами города, включая центр.</p>
+						    </div>
+					    </div>
+				    </div>
+					<!--div class="bg-info"></div-->
+				    <!-- </div> -->
+			</section>
+
+			<section class="section--plans" data-navigation="plans">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-10 col-xs-offset-2 col-md-5 col-md-offset-1"><h2>Планировка квартир</h2></div>
+						<div class="col-xs-6 col-xs-offset-2 col-md-6 col-md-offset-0 align-right">
+							<select class="section" onchange="document.getElementById('plan').src='images/plan'+this.value+'.jpg'; ">
+								<option value=1>секция 1</option>
+								<option value=2>секция 2</option>
+							</select>
+							<!-- <span>Этаж</span> -->
+							<svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plan-arrow"></use></svg>
+							<select class="floor" onchange="document.getElementById('plan').src='images/plan'+this.value+'.jpg'; ">
+								<option value=1>Этаж 1</option>
+								<option value=2>Этаж 2</option>
+							</select>
+							<svg width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#plan-arrow"></use></svg>
+						</div>
+					<hr>
+					<!-- <img class="img-responsive" name="pic" id="pic" src="images/img1.jpg" alt="plans"> -->
+
+					<img class="img-responsive " name="plan" src="images/plan1.jpg" id="plan" usemap="#m_plan" alt="" />
+					<map name="m_plan" id="m_plan">
+					    <!-- <area shape="poly" coords="935,619,1143,619,1143,625,1154,623,1180,615,1196,608,1213,599,1229,587,1244,573,1267,544,1283,520,1288,507,1292,494,1297,461,1296,318,1170,317,1043,318,1043,379,966,379,966,389,935,389,935,619,935,619" href="javascript:;" alt="" class="{fill:true,fillColor:'fff',fillOpacity:0.63,stroke:false,strokeColor:'330066',strokeOpacity:0.8,strokeWidth:5}"/> -->
+
+					    <area shape="poly"  coords="710,504,710,619,814,619,917,619,917,504,917,389,814,389,710,389">
+					    <area shape="poly" href="/#1" state="qw" coords="311,393,311,398,259,398,207,398,207,509,207,619,313,619,418,619,418,509,418,398,390,398,361,398,361,393,361,388,336,388,311,388">
+					    <!-- <area shape="poly" href="/#2" coords="107,474,107,619,154,619,201,619,201,474,201,328,154,328,107,328">
+					    <area shape="poly" href="/#3" coords="1033,358,1033,389,979,389,924,389,924,504,924,619,983,619,1042,619,1042,617,1042,614,1086,614,1130,613,1132,613,1134,612,1134,623,1134,634,1138,633,1142,633,1153,630,1164,627,1173,624,1182,620,1190,616,1198,612,1208,605,1219,598,1230,588,1240,578,1247,570,1253,562,1262,549,1271,535,1275,525,1279,514,1282,503,1285,491,1286,481,1288,470,1288,445,1288,420,1287,374,1287,327,1160,327,1033,327">
+					    <area shape="poly" href="/#4" coords="719,202,719,322,818,322,916,322,916,202,916,82,818,82,719,82">
+					    <area shape="poly" href="/#5" coords="516,201,516,320,614,320,711,320,711,201,711,82,614,82,516,82">
+					    <area shape="poly" href="/#6" coords="311,201,311,320,409,320,507,320,507,201,507,82,409,82,311,82">
+					    <area shape="poly" href="/#7" coords="108,201,108,320,206,320,303,320,303,201,303,82,206,82,108,82">
+					    <area shape="poly" href="/#8" coords="1135,79,1135,82,1030,82,925,82,925,202,925,321,987,321,1050,321,1164,320,1279,320,1279,290,1279,260,1284,260,1288,260,1288,252,1288,245,1286,232,1284,219,1282,207,1279,196,1277,189,1275,183,1269,172,1264,161,1258,152,1252,143,1244,135,1237,126,1228,118,1219,111,1210,105,1201,99,1188,93,1175,86,1164,83,1154,79,1144,77,1135,75,1135,75,1134,75"> -->
+					</map>
+					</div>
+
+
+
+					<script type="text/javascript">
+					$(document).ready(function() {
+					    // $("img[usemap]").maphilight().rwdImageMaps();
+					    // $("img[usemap]").mapster({staticState: true, isMask: false, noHrefIsMask: false, altImage: 'prodano.png', altImageFill: true, altImageStroke: false, altImageOpacity: 1});
+					    $("img[usemap]").mapster({staticState: true, 'highlight':true, altImage: 'images/prodano.png', altImageFill: true, altImageStroke: false, altImageOpacity: 0.1,showToolTip: true, mapKey: 'state',
+					        areas: [
+					            {
+					                key: 'qw',
+					                toolTip: "Продано",
+					                toolTipContainer: '<div style=\"border: 2px solid #efdfbe;border-radius: 6px\"></div>'}
+					        ] });
+
+						var resizeTime = 100;     // total duration of the resize effect, 0 is instant
+						var resizeDelay = 100;    // time to wait before checking the window size again
+						                          // the shorter the time, the more reactive it will be.
+						                          // short or 0 times could cause problems with old browsers.
+					    function resize(maxWidth,maxHeight) {
+						     var image =  $('img[usemap]'),
+						        imgWidth = image.width(),
+						        imgHeight = image.height(),
+						        newWidth=0,
+						        newHeight=0;
+
+						    if (imgWidth/maxWidth>imgHeight/maxHeight) {
+						        newWidth = maxWidth;
+						    } else {
+						        newHeight = maxHeight;
+						    }
+						    image.mapster('resize',newWidth,newHeight,resizeTime);
+						}
+
+					// Track window resizing events, but only actually call the map resize when the
+					// window isn't being resized any more
+
+					function onWindowResize() {
+
+					    var curWidth = $(window).width(),
+					        curHeight = $(window).height(),
+					        checking=false;
+					    if (checking) {
+					        return;
+					            }
+					    checking = true;
+					    window.setTimeout(function() {
+					        var newWidth = $(window).width(),
+					           newHeight = $(window).height();
+					        if (newWidth === curWidth &&
+					            newHeight === curHeight) {
+					            resize(newWidth,newHeight);
+					        }
+					        checking=false;
+					    },resizeDelay );
+					}
+
+					$(window).bind('resize',onWindowResize);
+
+
+
+					    // fill: true,fillColor: 'ffffff',fillOpacity: 0.6
+					    // $('area').on('click', function() {
+					    //     alert($(this).attr('href') + ' clicked');
+					    //     return false;
+
+					    // });
+					});
+
+					</script>
+				</div>
+			</section>
+
+			<section class="section_commerc" data-navigation="commerc">
+				<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<p class="center-block">Вы можете приобрести или взять в аренду нежилые помещения для вашей коммерческой деятельности.<br>Выбор различен и велик . </p>
+						<div class="input-group center-block">
+					       	<button class="btn btn-commerc center-block" type="button">
+					       	<svg width="46" height="39"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#commerc"></use></svg>
+					       	<span>Посмотреть коммерческую недвижимость</span>
+					       	</button>
+						</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section_map" data-navigation="map">
+				<div id="map"></div>
+			</section>
+
+			<div class="nav_buttons">
+				    <a class="nav_link" href="" title="" data-navlink="gallery"><svg width="40" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#gallery"></use></svg><span></span></a>
+				    <a class="nav_link" href="" title="" data-navlink="plans"><svg width="40" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#info"></use></svg><span></span></a>
+				    <a class="nav_link" href="" title="" data-navlink="commerc"><svg width="40" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#commerc"></use></svg><span></span></a>
+				    <a class="nav_link act" href="" title="" data-navlink="map"><svg width="40" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#gmap"></use></svg><span></span></a>
+			</div>
+	    </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+    <script src="js/script.js"></script>
+    <!-- FlexSlider -->
+  	<script defer src="js/jquery.flexslider.js"></script>
+
+  	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9GANjLIDTl4_1eG3Lg3KiQePKHNDlgGE&callback=initMap" async defer></script>
+
+    <script type="text/javascript">
+		// Note: This example requires that you consent to location sharing when
+		// prompted by your browser. If you see the error "The Geolocation service
+		// failed.", it means you probably did not give permission for the browser to
+		// locate you.
+
+
+		function initMap() {
+		  var map = new google.maps.Map(document.getElementById('map'), {
+		    center: {lat: 46.436709, lng: 30.766171},
+		    zoom: 17,
+		    scrollwheel: false,
+    		navigationControl: false,
+    		mapTypeControl: false,
+    		scaleControl: false,
+    		draggable: false
+		  });
+
+		  google.maps.event.addListener(map, 'idle', function(){
+			    $('style').remove();
+			});
+
+		  var infoWindow = new google.maps.InfoWindow({map: map});
+
+		  // Try HTML5 geolocation.
+/*		  if (navigator.geolocation) {
+		    navigator.geolocation.getCurrentPosition(function(position) {
+		      var pos = {
+		        lat: position.coords.latitude,
+		        lng: position.coords.longitude
+
+		      };*/
+
+		        var contentString = '<div id="MapContent">'+
+			      '<p>Адрес: ул. Генуэзская<br>' +
+			      'Площадь квартир: от кв.м. до кв.м. <br>' +
+			      'Срок сдачи: III квартал 2018 года </p>' +
+			      '</div>';
+
+		      infoWindow.setPosition({lat: 46.436709, lng: 30.766171});
+		      infoWindow.setContent(contentString);
+		      // map.setCenter(pos);
+		      map.setCenter({lat: 46.436709, lng: 30.766171});
+
+				  var image = 'images/mapMarker.png';
+				  var marker = new google.maps.Marker({
+				    position: {lat: 46.436709, lng: 30.766171},
+				    // position: pos,
+				    map: map,
+				    animation: google.maps.Animation.DROP,
+				    icon: image
+				  });
+				  marker.addListener('click', function() {
+					    infoWindow.open(map, marker);
+				  });
+
+
+/*		    }, function() {
+		      handleLocationError(true, infoWindow, map.getCenter());
+		    });
+		  } else {
+		    // Browser doesn't support Geolocation
+		    handleLocationError(false, infoWindow, map.getCenter());
+		  }*/
+		}
+
+		function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+		  infoWindow.setPosition(pos);
+		  infoWindow.setContent(browserHasGeolocation ?
+		                        'Error: The Geolocation service failed.' :
+		                        'Error: Your browser doesn\'t support geolocation.');
+		}
+
+
+		$(document).ready(function () {
+
+
+			// index page, right navigation checker
+		    if( $('.nav_buttons').length ){
+		        var nav_links =  $('[data-navlink]');
+		        var nav_blocks = $('[data-navigation]');
+		        nav_links.click(function(e){
+		            e.preventDefault();
+		            var _index = nav_links.index(this);
+		            var scroll_top = $(nav_blocks[_index]).offset().top+1;
+		            $('html,body').animate({scrollTop:scroll_top},1000);
+		        });
+		        var navs_length = nav_links.length;
+
+/*		        var navWindowScroll = function(){
+		            var top = getScrollTop();
+
+		            for( var i= navs_length-1; i>=0; i-- ){
+		                var delta = ( i==navs_length-1 )? -240:0;
+		                if( $(nav_blocks[i]).offset().top +delta <= top ){
+		                    nav_links.removeClass('act');
+		                    $(nav_links[i]).addClass('act');
+		                    break;
+		                }
+		            }
+		        };
+		        window.onscroll = navWindowScroll;
+		        navWindowScroll();*/
+		    }
+
+
+			var trigger = $('.hamburger'),
+		    	overlay = $('.overlay'),
+		    	isClosed = true;
+
+		    trigger.click(function () {
+		      hamburger_cross();
+		    });
+
+		    function hamburger_cross() {
+
+		      if (isClosed == true) {
+		        overlay.hide();
+		        trigger.removeClass('is-open');
+		        trigger.addClass('is-closed');
+		        isClosed = false;
+		      } else {
+		        overlay.show();
+		        trigger.removeClass('is-closed');
+		        trigger.addClass('is-open');
+		        isClosed = true;
+		      }
+		  	}
+
+		  	window.onscroll = function() {
+		  		if ($('#wrapper').hasClass('toggled')) {
+		  			hamburger_cross();
+		  			$('#wrapper').toggleClass('toggled');
+		  		}
+		  	}
+
+
+		  	$('[data-toggle="offcanvas"]').click(function () {
+		        $('#wrapper').toggleClass('toggled');
+		  	});
+
+		  	//onhover image
+				//установите непрозрачность до 0,4 для всех изображений
+			//непрозрачность = 1 - полностью непрозрачным
+			//непрозрачность = 0 - невидимая
+			// $('.img img').css('opacity', 1);
+			// когда наведете курсор на выбранном изображении изменить непрозрачность до 1
+			// $('#house').hover(
+			// function(){
+			// 	$('day').stop().fadeTo('slow', 0);
+			// },
+			// function(){
+			// 	$('night').stop().fadeTo('slow', 1);
+			// });
+
+
+			$('.toggle').each(function() {
+				$(this).toggles({
+					clickable: !$(this).hasClass('noclick'),
+					dragable: !$(this).hasClass('nodrag'),
+					click: ($(this).attr('rel')) ? $('.'+$(this).attr('rel')) : undefined,
+					on: !$(this).hasClass('off'),
+					checkbox: ($(this).data('checkbox')) ? $('.'+$(this).data('checkbox')) : undefined,
+					ontext: $(this).data('ontext') || '',
+					offtext: $(this).data('offtext') || ''
+				});
+			});
+
+			$('.house img').css({opacity: 0.0});
+ 			$('.house img:first').css({opacity: 1.0});
+
+			function showDayNight(){
+
+				// Берем первую картинку
+				var current = ($('.house img.show')?  $('.house img.show') : $('.house img:first'));
+
+				// Берем следующую картинку, когда дойдем до последней начинаем с начала
+				var next = ((current.next().length) ? ((current.next().hasClass('show')) ? $('.house img:first') :current.next()) : $('.house img:first'));
+
+				current.stop(1,1);
+				// Подключаем эффект растворения/затухания для показа картинок, css-класс show имеет больший z-index
+				next.css({opacity: 0.0})
+				.addClass('show')
+				.animate({opacity: 1.0}, 1400);
+
+				// Прячем текущую картинку
+				current.animate({opacity: 0.0}, 1400)
+				.removeClass('show');
+			}
+
+			$('.toggle').on('toggle', function(e, active) {
+
+			  if (active) {
+			    $("#checkDay").toggleClass("day night");
+				showDayNight();
+
+			  } else {
+				$("#checkDay").toggleClass("night day");
+			    showDayNight();
+
+			  }
+			});
+
+			var scrollDownHolder = $('.js-scroll-down-holder');
+		    if (scrollDownHolder.length){// && !isTouch) {
+		        scrollDownHolder.click(function(){
+		            $('html,body').stop(1,1).animate({scrollTop: $(window).height()}, 400);
+		        });
+		        var isHidden = false;
+		        var watchScrollTopFn = function(){
+		            if (isHidden && $(window).scrollTop() < 1) {scrollDownHolder.fadeIn(); isHidden = false;}
+		            if (!isHidden && $(window).scrollTop() > 1){scrollDownHolder.fadeOut(); isHidden = true;}
+		        };
+		        setInterval(watchScrollTopFn , 100);
+		        watchScrollTopFn();
+		    }
+
+
+		    $(".regular").slick({
+			    dots: false,
+			    infinite: true,
+			    slidesToShow: 3,
+			    slidesToScroll: 3
+			});
+
+		    $(".toggled .hamburger.is-open").hover(
+		      function () {
+		        // $(this).find("span").css("background-color","white");
+		        $(this).find("span").toggleClass("is-on")
+		      },
+		      function () {
+		        // $(this).find("span").css("background-color","#2a483f");
+				$(this).find("span").toggleClass("is-on")
+		      }
+		    );
+
+	          $('#carousel').flexslider({
+		        animation: "slide",
+		        controlNav: false,
+		        animationLoop: false,
+		        slideshow: false,
+		        itemWidth: 115,
+		        itemMargin: 12,
+		        asNavFor: '#slider',
+		        prevText: "",           //String: Set the text for the "previous" directionNav item
+    			nextText: "",               //String: Set the text for the "next" directionNav item
+		      });
+
+		      $('#slider').flexslider({
+		        animation: "slide",
+		        controlNav: false,
+		        directionNav: false,
+		        animationLoop: false,
+		        slideshow: false,
+		        sync: "#carousel",
+		       	prevText: "",           //String: Set the text for the "previous" directionNav item
+    			nextText: "",               //String: Set the text for the "next" directionNav item
+		        start: function(slider){
+		          $('body').removeClass('loading');
+		        }
+		      });
+
+		});
+    </script>
+	</body>
+</html>
+
+
+
+

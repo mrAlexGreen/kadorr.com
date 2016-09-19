@@ -1,0 +1,33 @@
+
+  .jslider_year .jslider-bg i { background-color: rgba(255, 255, 255, 0.22); background-image: none;}
+
+  .jslider_year .jslider-bg .v {background-color: #fff6d9; background-image: none;}
+
+  .jslider_year .jslider-pointer{
+    width: 8px;
+    height: 8px;
+    background-color: #fff6d9;
+    border-radius: 4px;
+    background-image: none;
+  }
+
+  .jslider_year .jslider-value{
+    background: url(../img/data_1.svg) no-repeat 0 0;
+    opacity: .4;
+    color: white;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    top: -25px;
+    padding: 0 2px 2px 2px;
+  }
+  .jslider_year .jslider-value-to{
+     background: url(../img/data_2.svg) no-repeat 0 0px;
+  }
+
+
+  .jslider_year .jslider-bg i,
+  .jslider_year .jslider-bg .v{
+    height: 2px;
+  }

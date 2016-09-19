@@ -1,0 +1,45 @@
+
+  .jslider_year .jslider-bg i { background-color: rgba(255, 255, 255, 0.22); background-image: none;}
+
+  .jslider_year .jslider-bg .v {background-color: #fff6d9; background-image: none;}
+
+  .jslider_year .jslider-pointer{
+    width: 8px;
+    height: 8px;
+    background-color: #fff6d9;
+    border-radius: 4px;
+    background-image: none;
+/*     -webkit-transition: width .5s;
+    transition: all .5s;
+    transition: all .5s;
+    transition: all .5s; */
+  }
+  .jslider_year .jslider-pointer:hover{
+    width: 12px;
+    height: 12px;
+    background-color: #fff6d9;
+    border-radius: 6px;
+  }
+
+  .jslider_year .jslider-value{
+    background: url(../images/sprite_kadorr/data_1.svg) no-repeat 0 0;
+    opacity: .4;
+    color: white;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    top: -25px;
+    padding: 0 2px 2px 2px;
+  }
+  .jslider_year .jslider-value-to{
+     background: url(../images/sprite_kadorr/data_2.svg) no-repeat 0 0px;
+  }
+  .jslider_year .jslider-label{
+    display: none;
+  }
+
+  .jslider_year .jslider-bg i,
+  .jslider_year .jslider-bg .v{
+    height: 2px;
+  }

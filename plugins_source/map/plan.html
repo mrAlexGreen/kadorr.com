@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>plan</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.imagemapster.js"></script>
+    <!--script type="text/javascript" src="../jQuery-rwdImageMaps-master/jquery.rwdImageMaps.js"></script>
+    <script type="text/javascript" src="http://skyland2.com.ua/wp-content/themes/skyland/js/jquery.maphilight.min.js"></script-->
+    <script type="text/javascript" src="http://skyland2.com.ua/wp-content/themes/skyland/js/jquery.rwdImageMaps.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--Fireworks CS6 Dreamweaver CS6 target.  Created Tue Aug 30 15:39:25 GMT+0300 2016-->
+</head>
+<body bgcolor="#ffffff">
+<img name="plan" src="plan1.jpg" width="1308" height="723" id="plan" usemap="#m_plan" alt="" />
+<map name="m_plan" id="m_plan">
+    <!-- <area shape="poly" coords="935,619,1143,619,1143,625,1154,623,1180,615,1196,608,1213,599,1229,587,1244,573,1267,544,1283,520,1288,507,1292,494,1297,461,1296,318,1170,317,1043,318,1043,379,966,379,966,389,935,389,935,619,935,619" href="javascript:;" alt="" class="{fill:true,fillColor:'fff',fillOpacity:0.63,stroke:false,strokeColor:'330066',strokeOpacity:0.8,strokeWidth:5}"/> -->
+
+    <area shape="poly"  coords="710,504,710,619,814,619,917,619,917,504,917,389,814,389,710,389">
+    <area shape="poly" href="/#1" state="qw" coords="311,393,311,398,259,398,207,398,207,509,207,619,313,619,418,619,418,509,418,398,390,398,361,398,361,393,361,388,336,388,311,388">
+    <!-- <area shape="poly" href="/#2" coords="107,474,107,619,154,619,201,619,201,474,201,328,154,328,107,328">
+    <area shape="poly" href="/#3" coords="1033,358,1033,389,979,389,924,389,924,504,924,619,983,619,1042,619,1042,617,1042,614,1086,614,1130,613,1132,613,1134,612,1134,623,1134,634,1138,633,1142,633,1153,630,1164,627,1173,624,1182,620,1190,616,1198,612,1208,605,1219,598,1230,588,1240,578,1247,570,1253,562,1262,549,1271,535,1275,525,1279,514,1282,503,1285,491,1286,481,1288,470,1288,445,1288,420,1287,374,1287,327,1160,327,1033,327">
+    <area shape="poly" href="/#4" coords="719,202,719,322,818,322,916,322,916,202,916,82,818,82,719,82">
+    <area shape="poly" href="/#5" coords="516,201,516,320,614,320,711,320,711,201,711,82,614,82,516,82">
+    <area shape="poly" href="/#6" coords="311,201,311,320,409,320,507,320,507,201,507,82,409,82,311,82">
+    <area shape="poly" href="/#7" coords="108,201,108,320,206,320,303,320,303,201,303,82,206,82,108,82">
+    <area shape="poly" href="/#8" coords="1135,79,1135,82,1030,82,925,82,925,202,925,321,987,321,1050,321,1164,320,1279,320,1279,290,1279,260,1284,260,1288,260,1288,252,1288,245,1286,232,1284,219,1282,207,1279,196,1277,189,1275,183,1269,172,1264,161,1258,152,1252,143,1244,135,1237,126,1228,118,1219,111,1210,105,1201,99,1188,93,1175,86,1164,83,1154,79,1144,77,1135,75,1135,75,1134,75"> -->
+</map>
+
+
+</map>
+
+<!-- background-color: rgba(255, 255, 255, 0.63); -->
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // $("img[usemap]").maphilight().rwdImageMaps();
+    // $("img[usemap]").mapster({staticState: true, isMask: false, noHrefIsMask: false, altImage: 'prodano.png', altImageFill: true, altImageStroke: false, altImageOpacity: 1});
+    $("img[usemap]").mapster({staticState: true, 'highlight':true, altImage: 'prodano_3.png', altImageFill: true, altImageStroke: false, altImageOpacity: 0.1,showToolTip: true, mapKey: 'state',
+        areas: [
+            {
+                key: 'qw',
+                toolTip: "Продано",
+                toolTipContainer: '<div style=\"border: 2px solid #efdfbe;border-radius: 6px\"></div>'}
+        ] });
+    // fill: true,fillColor: 'ffffff',fillOpacity: 0.6
+    // $('area').on('click', function() {
+    //     alert($(this).attr('href') + ' clicked');
+    //     return false;
+
+    // });
+});
+
+</script>
+</body>
+</html>

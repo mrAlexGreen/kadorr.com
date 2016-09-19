@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://skyland2.com.ua/wp-content/themes/skyland/js/jquery.maphilight.min.js"></script>
+    <script type="text/javascript" src="http://skyland2.com.ua/wp-content/themes/skyland/js/jquery.rwdImageMaps.min.js"></script>
+</head>
+<body>
+<h1>Планировка дома</h1>
+<div class="plan-floor animated fadeIn" id="plan-floor" data-imgsrc="">
+    <div class="img-responsive">
+    <!-- <canvas style="width: 1655px; height: 1170px; position: absolute; left: 0px; top: 0px; padding: 0px; border: 0px; opacity: 1;" height="1170" width="1655"></canvas> -->
+    <img id="plan-floor-img" class="img-responsive" src="1-1.jpg" alt="plan floor" usemap="#basePlan" width="1655" height="1170">
+          </div>
+</div>
+<map name="basePlan" id="basePlan">
+            <area href="http://skyland2.com.ua/product/kvartira-v1-2k-6604-m2/" shape="poly" data-floor="65,34 м2" coords="230,475,398,474,398,433,489,435,490,644,441,642,439,671,230,672" class="{fill:true,fillColor:'fcbb07',fillOpacity:0.7,stroke:false,strokeColor:'330066',strokeOpacity:0.8,strokeWidth:1}">
+            <area href="http://skyland2.com.ua/product/kvartira-v21k-5126-m2/" shape="poly" data-floor="55,88 м2" coords="" class="{fill:true,fillColor:'fcbb07',fillOpacity:0.7,stroke:false,strokeColor:'330066',strokeOpacity:0.8,strokeWidth:1}">
+ <!--           <area href="http://skyland2.com.ua/product/kvartira-v3-1k-5449-m2/" shape="poly" data-floor="53,71 м2" coords="245,210,121,272,91,219,109,211,15,30,167,31,168,151,245,152" class="{fill:true,fillColor:'fcbb07',fillOpacity:0.7,stroke:false,strokeColor:'330066',strokeOpacity:0.8,strokeWidth:1}">
+            <area href="http://skyland2.com.ua/product/kvartira-v4-1k-4384-m2/" shape="poly" data-floor="43,31 м2" coords="176,30,176,144,369,143,368,13,287,10,287,28" class="{fill:true,fillColor:'fcbb07',fillOpacity:0.7,stroke:false,strokeColor:'330066',strokeOpacity:0.8,strokeWidth:1}">
+            <area href="http://skyland2.com.ua/product/kvartira-v5-1k-3615-m2/" shape="poly" data-floor="35,69 м2" coords="539,144,375,145,374,12,427,12,428,30,538,31" class="{fill:true,fillColor:'fcbb07',fillOpacity:0.7,stroke:false,strokeColor:'330066',strokeOpacity:0.8,strokeWidth:1}">
+            <area href="http://skyland2.com.ua/product/kvartira-v6-1k-3623-m2/" shape="poly" data-floor="36,08 м2" coords="545,143,546,29,655,28,655,11,706,11,708,144" class="{fill:true,fillColor:'fcbb07',fillOpacity:0.7,stroke:false,strokeColor:'330066',strokeOpacity:0.8,strokeWidth:1}">
+            <area href="http://skyland2.com.ua/product/kvartira-v7-1k-3829-m2/" shape="poly" data-floor="37,61 м2" coords="714,12,767,12,767,28,874,28,875,164,807,165,806,143,716,144" class="{fill:true,fillColor:'fcbb07',fillOpacity:0.7,stroke:false,strokeColor:'330066',strokeOpacity:0.8,strokeWidth:1}">
+            <area href="http://skyland2.com.ua/product/kvartira-v8-1k-3829-m2/" shape="poly" data-floor="37,61 м2" coords="808,174,874,173,875,306,767,308,767,325,714,326,715,194,807,193" class="{fill:true,fillColor:'fcbb07',fillOpacity:0.7,stroke:false,strokeColor:'330066',strokeOpacity:0.8,strokeWidth:1}">
+            <area href="http://skyland2.com.ua/product/kvartira-v9-1k-3623-m2/" shape="poly" data-floor="36,08 м2" coords="546,194,708,194,709,325,655,325,655,308,546,306" class="{fill:true,fillColor:'fcbb07',fillOpacity:0.7,stroke:false,strokeColor:'330066',strokeOpacity:0.8,strokeWidth:1}"> -->
+</map>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("img[usemap]").maphilight().rwdImageMaps();
+    $('area').on('click', function() {
+        alert($(this).attr('href') + ' clicked');
+        return false;
+
+    });
+});
+
+</script>
+</body>
+
+</html>
