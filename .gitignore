@@ -1,6 +1,8 @@
 .Saved/
 _arc/
 bower_components/
+plugins_source/
+.sass-cache/
 node_modules/
 .DS_Store
 *.log
